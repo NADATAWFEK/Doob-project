@@ -1,0 +1,254 @@
+/* start global rules */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --main-heading-color: #314584;
+  --main-padding: 80px;
+  --main-text-color: #777;
+  --main-span-color: #ff3946;
+  --input-background-color: #f4fafe;
+}
+body {
+  font-family: sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* meduim screen */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* large screen */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* end global rules */
+
+/* start Header rules */
+header {
+  width: 100%;
+  height: 70px;
+  position: relative;
+}
+header .container {
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: absolute;
+  left: 45px;
+  top: 25px;
+  align-items: center;
+}
+header .container .logo img {
+  width: 100px;
+  height: 40px;
+}
+/* small screen */
+@media (max-width: 768px) {
+  header .container .logo img {
+    width: 70px;
+    height: 30px;
+  }
+}
+
+/* start navbar rules */
+.container .navbar {
+  margin-left: 80px;
+}
+.navbar .nav {
+  display: flex;
+  column-gap: 50px;
+  margin-right: 80px;
+}
+.navbar .nav li a {
+  color: var(--main-heading-color);
+}
+/* End navbar rules */
+
+/* small screen */
+@media (max-width: 768px) {
+  header .container .navbar {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+}
+/* meduim screen */
+@media (max-width: 992px) {
+  header .container .navbar {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* large screen */
+@media (min-width: 992px) {
+  header .container .navbar {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* start arrow-Dawn rules */
+.container .arrow-Dawn {
+  position: absolute;
+  right: 210px;
+  display: flex;
+  column-gap: 5px;
+  cursor: pointer;
+}
+.container .arrow-Dawn {
+  color: var(--main-heading-color);
+}
+/* End arrow-Dawn rules */
+
+/* small screen */
+@media (max-width: 768px) {
+  .container .arrow-Dawn {
+    right: 320px;
+  }
+}
+/* meduim screen */
+@media (max-width: 992px) {
+  .container .arrow-Dawn {
+    right: 400px;
+  }
+}
+/* large screen */
+@media (min-width: 992px) {
+  .container .arrow-Dawn {
+    right: 400px;
+  }
+}
+
+/* start contact-us rules */
+.container .contact-us {
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px #c0c0c0;
+  height: 40px;
+  padding-top: 15px;
+  padding-right: 10px;
+  margin-left: 170px;
+}
+/* small screen */
+@media (max-width: 768px) {
+  .container .contact-us {
+    margin-right: 180px;
+
+    left: 20px;
+  }
+}
+/* meduim screen */
+@media (max-width: 992px) {
+  .container .contact-us {
+    margin-right: 165px;
+  }
+}
+/* large screen */
+@media (min-width: 992px) {
+  .container .contact-us {
+    margin-right: 165px;
+  }
+}
+
+.container .contact-us .btn {
+  display: flex;
+  column-gap: 12px;
+  margin-left: 50px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  color: var(--main-span-color);
+}
+/* End contact-us rules */
+/* small screen */
+
+/* end Header rules */
+
+/* start main rules */
+main {
+  width: 100%;
+  display: flex;
+  position: relative;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+main .section-one {
+  width: 50%;
+  position: relative;
+}
+main .section-one .page-section-text {
+  position: absolute;
+  top: 40%;
+  text-align: left;
+  left: 22%;
+}
+main .section-one .page-section-button {
+  position: absolute;
+  top: 70%;
+  left: 21%;
+}
+/* small screen */
+@media (max-width: 768px) {
+  main .section-one .page-section-button {
+    top: 98%;
+  }
+}
+
+main .section-one .page-section-button .btn {
+  border-radius: 18px;
+  width: 150px;
+  height: 27px;
+  background-color: var(--main-span-color);
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+main .section-one .page-section-button a {
+  color: var(--main-heading-color);
+  cursor: pointer;
+}
+
+main .section-one .page-section-text h1 {
+  word-spacing: 4px;
+  color: var(--main-heading-color);
+  font-family: sans-serif;
+  margin-bottom: 15px;
+}
+
+main .section-two {
+  width: 50%;
+}
+main .section-two .page-section-img img {
+  width: 650;
+  height: 580;
+}
+
+/* End main rules */
